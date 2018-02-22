@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
   get 'pagestest5/show'
 
   get 'pagestest5/edit'
