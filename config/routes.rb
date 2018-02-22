@@ -8,7 +8,11 @@ Rails.application.routes.draw do
   get 'pagestest5/destroy'
 
   get 'pagestest4/index'
-  get 'posts/show'
+
+  resources :posts
+  #get 'posts' => 'posts#show'
+  #get 'posts/new' => 'posts#new'
+  #post 'posts' => 'posts#create'
 
   # this says go to about controller and go to this method in the controller
   get 'about' => 'about#index'
